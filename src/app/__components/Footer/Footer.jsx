@@ -1,8 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Footer() {
+  const linkText = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Project",
+      href: "/projects",
+    },
+    {
+      name: "About Me ",
+      href: "/about",
+    },
+    {
+      name: "Contact",
+      href: "/contact",
+    },
+  ];
   return (
     <footer className="bg-gray-900">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
@@ -43,6 +60,7 @@ export default function Footer() {
                 className="rounded-lg"
                 width={66}
                 height={100}
+                alt="Nikola tesla"
               />
             </div>
 
@@ -52,50 +70,18 @@ export default function Footer() {
           </div>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
-            <li>
-              <Link
-                className="text-white transition hover:text-gray-200"
-                href="#"
-              >
-                {" "}
-                About{" "}
+          {linkText.map(ele=>{
+            return(
+              <Link href={ele.href} key={ele.id}>
+                {ele.name}
               </Link>
-            </li>
-
-            <li>
-              <Link
-                className="text-white transition hover:text-gray-200"
-                href="#"
-              >
-                {" "}
-                Services{" "}
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className="text-white transition hover:text-gray-200"
-                href="#"
-              >
-                {" "}
-                Projects{" "}
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className="text-white transition hover:text-gray-200"
-                href="#"
-              >
-                {" "}
-                Blog{" "}
-              </Link>
-            </li>
+            )
+          })}
           </ul>
         </div>
 
         <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-          Copyright &copy; 2022. All rights reserved.
+          Copyright &copy; 2024. All rights reserved.
         </p>
       </div>
     </footer>

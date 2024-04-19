@@ -35,7 +35,6 @@ export default function Card(props) {
           {" "}
           {props.date}{" "}
         </time>
-
         <Link href={props.link}>
           <h3 className="mt-0.5   text-lg font-medium text-gray-300">
             {props.text}
