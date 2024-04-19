@@ -3,32 +3,21 @@ import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
-  const navigation = [
-    { name: "Home", href: "/", current: true },
-    { name: "Products", href: "/product", current: false },
-    { name: "Cart", href: "/cart", current: false },
-    {
-      name: "Connect",
-      href: "https://portfolio-eight-mu-24.vercel.app/",
-      current: false,
-    },
-  ];
   return (
-    <footer className="bg-gray-100">
+    <footer className="bg-gray-900">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <button
-          onClick={
-            ()=>{
-              window.scrollTo({
-                top:"0",
-                behavior:"smooth"
-              })
-            }
+            className="inline-block rounded-full bg-[#ffb400] p-2 text-white shadow transition hover:bg-[#ffb400] sm:p-3 lg:p-4"
+        onClick={
+          ()=>{
+            window.scrollTo({
+              top:0,
+              behavior:"smooth"
+            })
           }
-            className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
-            href="#MainContent"
-          >
+        }
+>
             <span className="sr-only">Back to top</span>
 
             <svg
@@ -48,33 +37,65 @@ export default function Footer() {
 
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
-            <div className="flex justify-center text-teal-600 lg:justify-start">
-              <Image src={require("../img/1.png")} width={200} height={200} />
+            <div className="flex justify-center text-[#ffb400] lg:justify-start">
+              <Image
+                src={require("../img/nikola tesla.png")}
+                className="rounded-lg"
+                width={66}
+                height={100}
+              />
             </div>
 
             <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-              Welcome, sir. Here you will find all the products you need. We are
-              waiting for you to contact us. Do not hesitate
+              Hello , My Name is Mohamed, i'm front end developer.
             </p>
           </div>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
-            {navigation.map((ele) => {
-              return (
-                <Link
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
-                  key={ele.id}
-                >
-                  {ele.name}
-                </Link>
-              );
-            })}
+            <li>
+              <Link
+                className="text-white transition hover:text-gray-200"
+                href="#"
+              >
+                {" "}
+                About{" "}
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className="text-white transition hover:text-gray-200"
+                href="#"
+              >
+                {" "}
+                Services{" "}
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className="text-white transition hover:text-gray-200"
+                href="#"
+              >
+                {" "}
+                Projects{" "}
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className="text-white transition hover:text-gray-200"
+                href="#"
+              >
+                {" "}
+                Blog{" "}
+              </Link>
+            </li>
           </ul>
         </div>
 
         <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-          Copyright &copy; 2024. All rights reserved.
+          Copyright &copy; 2022. All rights reserved.
         </p>
       </div>
     </footer>

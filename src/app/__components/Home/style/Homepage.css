@@ -1,0 +1,17 @@
+@media (max-width:1055px) {
+    .bdesign{
+        display: none;
+    }
+}
+.imagediv{
+    animation: x 1s infinite alternate;
+}
+
+/* @keyframes x {
+    from{
+        transform: translate(0,-10px);
+    }
+    to{
+        transform: translate(0,10px);
+    }
+} */
