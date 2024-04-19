@@ -25,6 +25,7 @@ export default function Card(props) {
             src={props.image}
             width={400}
             height={400}
+            alt="My Project"
           />
         </Link>
         <time

@@ -1,7 +1,5 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
-import cv from  "./CV.jpg"
 export default function CV() {
   return (
     <div className='CV m-20 flex justify-center flex-col items-center'>

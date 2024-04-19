@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
 
             <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-              Hello , My Name is Mohamed, i'm front end developer.
+              Hello , My Name is Mohamed, I&apos;m front end developer.
             </p>
           </div>
 

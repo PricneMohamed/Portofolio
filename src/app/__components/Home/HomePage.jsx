@@ -103,8 +103,8 @@ export default function HomePage() {
           })}
         </motion.h2>
         <h3 className="text-[20px] lg:w-[600px] sm:w-[100%]">
-          I am an Egyptian front-end developer. I'm 19 years old. I study At
-          Alexandria Advanced Military Technical School in Alexandria. Don't
+          I am an Egyptian front-end developer. I&apos;m 19 years old. I study At
+          Alexandria Advanced Military Technical School in Alexandria. Don&apos;t
           forget to see more of my work.
         </h3>
         <Link

@@ -48,11 +48,12 @@ export default function AboutMe() {
       >
         <Image
           src={require("./image/cheifjpg-removebg-preview.png")}
-          className="rounded-[50%]  m-20
+          className="rounded-[50%]
         lg:w-[400px] z-50 md:w-[300px]  sm:w-[300px] mt-10  w-[250px] flex-col
         object-cover m-auto"
           width={700}
           height={700}
+          alt="Prince Mohamed"
         />
       </motion.div>
       <div
@@ -102,8 +103,8 @@ export default function AboutMe() {
           })}
         </motion.h2>
         <h3 className="text-[20px] lg:w-[600px] sm:w-[100%]">
-          I am an Egyptian front-end developer. I'm 19 years old. I study At
-          Alexandria Advanced Military Technical School in Alexandria. Don't
+          I am an Egyptian front-end developer. I&apos;m 19 years old. I study At
+          Alexandria Advanced Military Technical School in Alexandria. DonI&apos;t
           forget to see more of my work.
         </h3>
         <button
@@ -136,8 +137,7 @@ export default function AboutMe() {
           </span>
 
           <span className="text-sm font-medium transition-all group-hover:me-4">
-            {" "}
-            My cv{" "}
+            My cv
           </span>
         </button>
       </div>
